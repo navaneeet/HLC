@@ -1,0 +1,29 @@
+[package]
+name = "hlc"
+version = "0.1.0"
+edition = "2021"
+authors = ["Project Vision Team"]
+description = "Hybrid Lossless Compression (HLC) Platform"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+rayon = "1.10"
+crossbeam-channel = "0.5"
+crc32fast = "1.4"
+sha2 = "0.10"
+num_cpus = "1.16"
+zstd = "0.13"
+byteorder = "1.5"
+log = "0.4"
+env_logger = "0.11"
+indicatif = { version = "0.17", features = ["rayon"] }
+thiserror = "1.0"
+bitflags = "2.6"
+
+[dev-dependencies]
+criterion = "0.5"
+rand = "0.8"
+
+[[bench]]
+name = "compression"
+harness = false

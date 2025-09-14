@@ -1,0 +1,48 @@
+# Rust
+/target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Test artifacts
+/test_data/
+/benchmark_results/
+*.hlc
+
+# Documentation build
+/docs/_build/
+/docs/site/
+
+# Coverage reports
+/coverage/
+*.profraw
+*.profdata
+
+# Flamegraph
+flamegraph.svg
+perf.data*
